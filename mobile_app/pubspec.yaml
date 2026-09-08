@@ -1,0 +1,45 @@
+name: mobile_app
+description: "Hotel Smart POS Mobile Application"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+# Firebase & Notifications
+  firebase_core: ^3.1.0
+  firebase_messaging: ^15.0.1
+  flutter_local_notifications: ^17.1.2
+  # ESC/POS Printing
+  flutter_pos_printer_platform: ^1.0.8
+  esc_pos_utils_2: ^2.0.2
+  image: ^4.1.7
+# Offline Storage & Connectivity
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  connectivity_plus: ^6.0.3
+  # State Management & DI
+  flutter_riverpod: ^2.5.1
+
+  # API & Real-time Communication
+  dio: ^5.4.3+1
+  socket_io_client: ^2.0.3+1
+
+  # Secure Storage (ለ JWT Token እና User Data)
+  flutter_secure_storage: ^9.0.0
+
+  # UI Enhancement Utilities
+  google_fonts: ^6.2.1
+  intl: ^0.19.0
+  flutter_spinkit: ^5.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
